@@ -62,44 +62,30 @@
 \posttitle{\newpage}
 \pretitle{\fontsize{12}{14}\sf
   \begin{textblock}{13}(2,0.7)
-    \includegraphics[height=1.2cm]{monash1line}
+    \includegraphics[height=1.2cm]{tudlogo_descriptor}
   \end{textblock}
  \begin{textblock}{17}(2,3)\sffamily
     \begin{center}\bfseries\Large
-      $semester$\\
-      $examperiod$\\[0.8cm]
-      Faculty of Business \& Economics
+      $faculty$\\
+      $department$\\[0.8cm]
     \end{center}\vspace*{0.4cm}
     \begin{tabular}{@{}p{4.5cm}p{10cm}}
       \bfseries UNIT CODES:  & \bfseries {$unitcode$} \tabularnewline[0.2cm]
       \bfseries TITLE OF PAPER: & \bfseries {$unittitle$} \tabularnewline[0.2cm]
-      \bfseries EXAM DURATION: & {$duration$} \tabularnewline[0.2cm]
+      \bfseries TYPE: & \bfseries {$type$} \tabularnewline[0.2cm]
+      \bfseries EXAM DURATION: & \bfseries {$duration$} \tabularnewline[0.2cm]
     \end{tabular}
     \fontsize{10}{11}\sf\raggedright
     \vspace{1cm}\par
     \textbf{AUTHORISED MATERIALS}\\[0.2cm]
-    This is a closed book exam, with the following permitted items.
+    This is a open book exam. with the following permitted items.
     \begin{itemize}
-    \item A physical calculator of any type or Virtual Calculator:
-      \begin{itemize}
-      \item Inbuilt Mac/Windows calculator
-      \item Website https://www.educalc.net/2336211.page
-      \item 10bii Financial Calculator for Mac by K2 Cashflow, https://apps.apple.com/au/app/10bii-financial-calculator/id473144920
-      \end{itemize}
-    \item 5 blank pages for use as working sheets
-    \item 2 pre-printed answer sheets
+    \item Blank pages for use as working sheets (provided).
+    \item Python documentation, accessible through the link on the desktop.
+    \item Lecture notes, either printed yourself, or the digital copies in the S: drive.
     \end{itemize}
     \vspace{1cm}\par
-    \textbf{RULES}\\[0.2cm]
-    During your eExam, you must not have in your possession any item/material that has not been authorised for your exam. This includes books, notes, paper, electronic device/s, smart watch/device, or writing on any part of your body. Authorised items are listed above. Items/materials on your device, desk, chair, in your clothing or otherwise on your person will be deemed to be in your possession. Mobile phones must be switched off and placed face-down on your desk during your exam attempt.
-
-    You must not retain, copy, memorise or note down any exam content for personal use or to share with any other person by any means during or following your exam. You are not allowed to copy/paste text to or from external sources unless this has been authorised by your Chief Examiner.
-
-    You must comply with any instructions given to you by Monash exam staff.
-
-    As a student, and under Monash University’s Student Academic Integrity procedure, you must undertake all your assessments with honesty and integrity. You must not allow anyone else to do work for you and you must not do any work for others. You must not contact, or attempt to contact, another person in an attempt to gain unfair advantage during your assessment. Assessors may take reasonable steps to check that your work displays the expected standards of academic integrity.
-
-    Failure to comply with the above instructions, or attempting to cheat or cheating in an assessment may constitute a breach of instructions under regulation 23 of the Monash University (Academic Board) Regulations or may constitute an act of academic misconduct under Part 7 of the Monash University (Council) Regulations.
+    %\textbf{RULES}\\[0.2cm]
   \end{textblock}
 }
 
@@ -111,7 +97,8 @@
 \newcounter{mks}
 \setcounter{mks}{0}
 \def\marks#1{\par\rightline{\normalsize\fbox{\sffamily\emph{#1 marks}}}\addtocounter{mks}{#1}}
-\def\endquestion{\nopagebreak\vspace*{0.3cm}\par\nopagebreak\rightline{\normalsize\fbox{\sffamily\textbf{Total: \arabic{mks} marks}}}\vspace*{0.5cm}\pagebreak}
+%\def\endquestion{\nopagebreak\vspace*{0.3cm}\par\nopagebreak\rightline{\normalsize\fbox{\sffamily\textbf{Total: \arabic{mks} marks}}}\vspace*{0.5cm}\pagebreak}
+\def\endquestion{\nopagebreak\vspace*{0.3cm}\par\nopagebreak\rightline{\normalsize\fbox{\sffamily\textbf{Total: \arabic{mks} marks}}}\vspace*{0.5cm}}
 
 \makeatletter
 \titleformat{\section}[block]%

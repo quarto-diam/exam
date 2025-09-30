@@ -1,5 +1,5 @@
-title: Monash Exam
-author: Rob J Hyndman
+title: DIAM exam
+author: Joffrey Wallaart
 version: 2.0.0
 quarto-required: ">=1.4.0"
 contributes:
@@ -20,4 +20,4 @@ contributes:
         - before-title.tex
         - after-body.tex
       format-resources:
-        - monash1line.jpg
+        - tudlogo_descriptor.png

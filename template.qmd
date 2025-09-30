@@ -1,9 +1,10 @@
 ---
-unitcode: ETC0000
-unittitle: "Advanced Bean Counting"
-duration: 2 hours 10 minutes
-semester: Semester One 2024
-examperiod: Examination Period
+unitcode: TW1-13
+unittitle: "Introduction to Programming"
+faculty: "Faculty of Electrical Engineering, Mathematics and Computer Science"
+department: "Delft Institute of Applied Mathematics"
+duration: 3 hours
+type: midterm
 format: exam-pdf
 ---
 
@@ -19,7 +20,11 @@ $$ \hat{\sigma}^2 = \frac{1}{n} \sum_{i=1}^n (x_i-\bar{x})^2$$
 
 \marks{20}
 
-#
+# 
+
+## M2_A title 
+
+\marks{40}
 
 Second question.
 
