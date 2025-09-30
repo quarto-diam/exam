@@ -76,39 +76,33 @@
       \bfseries EXAM DURATION: & \bfseries {$duration$} \tabularnewline[0.2cm]
     \end{tabular}
     \fontsize{10}{11}\sf\raggedright
-    \vspace{1cm}\par
-    \textbf{AUTHORISED MATERIALS}\\[0.2cm]
-    This is a open book exam. with the following permitted items.
-    \begin{itemize}
-    \item Blank pages for use as working sheets (provided).
-    \item Python documentation, accessible through the link on the desktop.
-    \item Lecture notes, either printed yourself, or the digital copies in the S: drive.
-    \end{itemize}
-    \vspace{1cm}\par
-    %\textbf{RULES}\\[0.2cm]
+    \\[0.8cm]
+    $instructions$
   \end{textblock}
 }
 
 %% QUESTIONS
 \usepackage{xifthen,titlesec}
 \setcounter{secnumdepth}{1} % Only number questions
-\newcounter{question}
-\setcounter{question}{0}
+
 \newcounter{mks}
 \setcounter{mks}{0}
 \def\marks#1{\par\rightline{\normalsize\fbox{\sffamily\emph{#1 marks}}}\addtocounter{mks}{#1}}
-%\def\endquestion{\nopagebreak\vspace*{0.3cm}\par\nopagebreak\rightline{\normalsize\fbox{\sffamily\textbf{Total: \arabic{mks} marks}}}\vspace*{0.5cm}\pagebreak}
 \def\endquestion{\nopagebreak\vspace*{0.3cm}\par\nopagebreak\rightline{\normalsize\fbox{\sffamily\textbf{Total: \arabic{mks} marks}}}\vspace*{0.5cm}}
 
 \makeatletter
 \titleformat{\section}[block]%
-  {\fontsize{15}{15}\bfseries}%
-  {\ifthenelse{\value{question} > 0}{\endquestion\clearpage}{}%
-  {\sffamily\bfseries\Large\textbf{SECTION}~\addtocounter{question}{1}\Alph{question}}}
-  {0.0em}{\noindent\setcounter{mks}{0}\@gobble}
+  {\fontsize{15}{15}\sffamily\bfseries}% visual format for the heading text
+  {}% no custom label (so the real title text is used)
+  {0em}% separation between label and title (no label, so 0)
+  {%
+    % Close the previous section (except before the first) by printing its total
+    \ifnum\value{section}>1\relax\endquestion\fi
+    % Reset marks at the start of the new section
+    \setcounter{mks}{0}%
+  }%
+%  [\vspace{0.3em}]  % optional after-code spacing
 \makeatother
-\titleformat{\subsection}[block]
-  {\fontsize{11}{12}\bfseries}{}{0.2em}{}
 
 %% PDF title
 \hypersetup{

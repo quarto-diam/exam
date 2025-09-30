@@ -4,14 +4,21 @@ unittitle: "Introduction to Programming"
 faculty: "Faculty of Electrical Engineering, Mathematics and Computer Science"
 department: "Delft Institute of Applied Mathematics"
 duration: 3 hours
-type: midterm
+type: Midterm
 format: exam-pdf
+instructions: |
+  **The exam contains FIVE questions. ALL questions must be answered. The exam is worth 100 marks in total.**
+
+  \vspace{1cm}
+
+  **AUTHORISED MATERIALS**
+
+  This is a open book exam. with the following permitted items.
+  
+  - Blank pages for use as working sheets (provided).
+  - Python documentation, accessible through the link on the desktop.
+  - Lecture notes, either printed yourself, or the digital copies in the S: drive.
 ---
-
-**The exam contains FIVE questions. ALL questions must be answered. The exam is worth 100 marks in total.**
-
-\vspace*{2cm}
-
 
 #
 
